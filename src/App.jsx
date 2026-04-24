@@ -1,0 +1,200 @@
+import "./App.css";
+
+function App() {
+  return (
+    <div className="page">
+      <header className="navbar">
+        <div className="logo">Amanda Guerra</div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section className="hero">
+        <p className="tagline fullTagline">
+          Electrical Engineering Student • Researcher • Robotics Mentor
+        </p>
+
+        <div className="heroText">
+          <h1>Building practical engineering solutions with purpose, teamwork, and impact.</h1>
+          <p className="heroParagraph">
+            I am an Electrical Engineering student at The University of Texas Rio Grande Valley with experience in
+            energy efficiency research, technical reporting, circuit design, robotics mentorship, and STEM outreach
+            across South Texas.
+          </p>
+          <div className="buttonRow">
+            <a className="button primary" href="#projects">View My Work</a>
+            <a className="button secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div className="heroCard profileCard">
+          <img className="profileImage" src="/images/headshot.jpg" alt="Amanda Guerra" />
+          <h2>Amanda Guerra</h2>
+          <p className="profileSubtitle">Electrical Engineering Student at UTRGV</p>
+          <p><strong>Focus Areas:</strong> Energy efficiency, circuits, technical writing, and robotics</p>
+          <p><strong>Strength:</strong> Turning technical data into clear and useful recommendations</p>
+        </div>
+      </section>
+
+      <section id="about" className="section">
+        <p className="sectionLabel">About Me</p>
+        <h2>Engineering with both technical detail and real-world usefulness.</h2>
+        <p>
+          My work sits at the intersection of electrical engineering, energy efficiency, robotics, and community
+          impact. I enjoy taking raw information, whether it is facility data, circuit measurements, or project
+          requirements, and turning it into something useful, clear, and actionable.
+        </p>
+        <p>
+          Through my research role at UTRGV and my mentorship in FIRST Robotics, I have learned how to communicate
+          technical ideas, work with teams, support students, and build solutions that matter beyond the classroom.
+        </p>
+      </section>
+
+      <section id="experience" className="section darkSection">
+        <p className="sectionLabel">Experience</p>
+        <h2>What I have been working on</h2>
+
+        <div className="experienceList">
+          <div className="experienceCard">
+            <div>
+              <h3>Student Researcher</h3>
+              <p className="company">Industrial Training and Assessment Center, UTRGV</p>
+            </div>
+            <p className="date">Aug 2025 – Present</p>
+            <p>
+              Support industrial energy assessments by analyzing facility data, researching equipment and labor costs,
+              building cost-savings models, and writing client-ready technical recommendations.
+            </p>
+          </div>
+
+          <div className="experienceCard">
+            <div>
+              <h3>FIRST Robotics Mentor and Volunteer</h3>
+              <p className="company">South Texas FIRST Robotics Community</p>
+            </div>
+            <p className="date">2024 – Present</p>
+            <p>
+              Mentor robotics students, support FRC and FTC teams, assist with events, and help create accessible STEM
+              opportunities for students in the Rio Grande Valley.
+            </p>
+          </div>
+
+          <div className="experienceCard">
+            <div>
+              <h3>Marketing Chair</h3>
+              <p className="company">Society of Hispanic Professional Engineers, UTRGV</p>
+            </div>
+            <p className="date">2026 – Present</p>
+            <p>
+              Create promotional content, support chapter communication, and help increase student engagement through
+              clear and consistent marketing.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" className="section">
+        <p className="sectionLabel">Featured Work</p>
+        <h2>Projects and impact</h2>
+
+        <div className="projectGrid">
+          <div className="projectCard">
+            <p className="projectType">Energy Efficiency / ITAC</p>
+            <h3>Occupancy Sensor Energy Savings Model</h3>
+            <p>
+              Created an Excel-based template to estimate energy savings, demand savings, implementation cost, and
+              payback period for industrial occupancy sensor retrofits.
+            </p>
+            <p className="impact">
+              <strong>Impact:</strong> Helped streamline technical recommendations using limited facility data, utility
+              bills, and lighting schedules.
+            </p>
+          </div>
+
+          <div className="projectCard">
+            <p className="projectType">Renewable Energy / Industrial Assessment</p>
+            <h3>Photovoltaic Solar Array Recommendation</h3>
+            <p>
+              Worked on refining a roof-based photovoltaic solar recommendation for an industrial facility in McAllen,
+              Texas using facility statistics and estimated annual energy production.
+            </p>
+            <p className="impact">
+              <strong>Impact:</strong> Connected engineering calculations with practical implementation decisions for
+              client-ready reporting.
+            </p>
+          </div>
+
+          <div className="projectCard">
+            <p className="projectType">Leadership / STEM Outreach</p>
+            <h3>FIRST Robotics Mentorship</h3>
+            <p>
+              Mentored students through FRC and FTC robotics, supported event operations in South Texas, and helped
+              expand access to STEM opportunities for students across the Rio Grande Valley.
+            </p>
+            <p className="impact">
+              <strong>Impact:</strong> Contributed to outreach, team sustainability, student leadership, and regional
+              STEM growth.
+            </p>
+          </div>
+
+          <div className="projectCard">
+            <p className="projectType">Electrical Engineering Coursework</p>
+            <h3>Circuit Design and Laboratory Projects</h3>
+            <p>
+              Designed, built, and tested circuits involving logic gates, multiplexers, ripple-carry adders, 555 timers,
+              RC/RL/RLC behavior, and measurement-based analysis.
+            </p>
+            <p className="impact">
+              <strong>Impact:</strong> Built hands-on experience with breadboards, IC chips, power supplies,
+              multimeters, oscilloscopes, and technical lab reporting.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" className="section darkSection">
+        <p className="sectionLabel">Skills</p>
+        <h2>Technical strengths</h2>
+
+        <div className="skills">
+          <span>C++</span>
+          <span>MATLAB</span>
+          <span>Excel Modeling</span>
+          <span>Circuit Design</span>
+          <span>CAD Modeling</span>
+          <span>Soldering</span>
+          <span>Technical Writing</span>
+          <span>Data Analysis</span>
+          <span>Energy Efficiency</span>
+          <span>Robotics Mentorship</span>
+        </div>
+      </section>
+
+      <section id="contact" className="section contactSection">
+        <p className="sectionLabel">Contact</p>
+        <h2>Let’s connect.</h2>
+        <p>
+          I am interested in engineering internships, research opportunities, robotics outreach, and projects where
+          technical work can make a real impact.
+        </p>
+
+        <div className="contactBox">
+          <p><strong>Email:</strong> amanda.guerra1245@gmail.com</p>
+          <p><strong>LinkedIn:</strong> www.linkedin.com/in/amanda-guerra-1a2623326</p>
+          <p><strong>Location:</strong> Mission, Texas</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 Amanda Guerra. Personal engineering portfolio.</p>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
