@@ -16,19 +16,22 @@ function App() {
 
       <section className="hero">
         <p className="tagline fullTagline">
-          Electrical Engineering Student • Researcher • Robotics Mentor
+          Electrical Engineering Student  • Student Researcher  •  Robotics Mentor
         </p>
 
         <div className="heroText">
           <h1>Building practical engineering solutions with purpose, teamwork, and impact.</h1>
           <p className="heroParagraph">
             I am an Electrical Engineering student at The University of Texas Rio Grande Valley with experience in
-            energy efficiency research, technical reporting, circuit design, robotics mentorship, and STEM outreach
+            energy efficiency research, circuit design, robotics mentorship, and STEM outreach
             across South Texas.
           </p>
           <div className="buttonRow">
             <a className="button primary" href="#projects">View My Work</a>
             <a className="button secondary" href="#contact">Contact Me</a>
+            <a className="button resumeButton" href="/resume.pdf" target="_blank" rel="noreferrer">
+              View Resume
+            </a>
           </div>
         </div>
 
@@ -36,7 +39,7 @@ function App() {
           <img className="profileImage" src="/images/headshot.jpg" alt="Amanda Guerra" />
           <h2>Amanda Guerra</h2>
           <p className="profileSubtitle">Electrical Engineering Student at UTRGV</p>
-          <p><strong>Focus Areas:</strong> Energy efficiency, circuits, technical writing, and robotics</p>
+          <p><strong>Focus Areas:</strong> Energy efficiency, circuit design, technical writing, and robotics</p>
           <p><strong>Strength:</strong> Turning technical data into clear and useful recommendations</p>
         </div>
       </section>
@@ -53,6 +56,12 @@ function App() {
           Through my research role at UTRGV and my mentorship in FIRST Robotics, I have learned how to communicate
           technical ideas, work with teams, support students, and build solutions that matter beyond the classroom.
         </p>
+
+        <div className="aboutPhotoGrid">
+          <img src="/images/about1.png" alt="Engineering work" />
+          <img src="/images/about2.png" alt="Robotics outreach" />
+          <img src="/images/about3.png" alt="Student leadership" />
+        </div>
       </section>
 
       <section id="experience" className="section darkSection">
@@ -189,6 +198,12 @@ function App() {
           <p><strong>Location:</strong> Mission, Texas</p>
         </div>
       </section>
+
+        <div className="resumeButtonWrapper">
+          <a className="button primary" href="/resume.pdf" target="_blank" rel="noreferrer">
+            Open My Resume
+          </a>
+        </div>
 
       <footer>
         <p>© 2026 Amanda Guerra. Personal engineering portfolio.</p>
