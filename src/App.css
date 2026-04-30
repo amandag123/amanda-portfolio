@@ -785,7 +785,7 @@ footer {
 }
 
 #about {
-  padding-top: 140px;
+  padding-top: 80px;
 }
 
 .galleryHeader {
@@ -799,4 +799,85 @@ footer {
   letter-spacing: -0.05em;
   margin: 12px auto 0;
   max-width: 1000px;
+}
+
+/* MOBILE HERO FIX */
+
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 6%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 45px 7% 60px;
+    min-height: auto;
+  }
+
+  .fullTagline {
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 12px 18px;
+    margin-bottom: 5px;
+  }
+
+  .heroText {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 11vw, 3.4rem);
+    line-height: 1.08;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+
+  .heroParagraph {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttonRow {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    min-width: 145px;
+    padding: 14px 18px;
+  }
+
+  .heroCard {
+    transform: none;
+    min-height: auto;
+    padding: 34px 24px;
+    width: 100%;
+  }
+
+  .profileImage {
+    width: 220px;
+    height: 220px;
+  }
+
+  .heroCard h2 {
+    font-size: 1.7rem;
+  }
+
+  .heroCard p {
+    max-width: 100%;
+  }
 }
