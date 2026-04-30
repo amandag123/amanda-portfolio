@@ -237,8 +237,21 @@ function App() {
         </section>
 
       <footer>
-        <p>© 2026 Amanda Guerra. Personal engineering portfolio.</p>
-      </footer>
+        <div className="builtBy">
+          <p>Hey! I built this website myself (from scratch).</p>
+          <span className="footerArrow">↓</span>
+          <a
+            className="footerCodeButton"
+            href="https://github.com/amandag123/amanda-portfolio"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Check it out
+          </a>
+        </div>
+
+          <p className="copyright">© 2026 Amanda Guerra. Personal engineering portfolio.</p>
+        </footer>
     </div>
   );
 }
@@ -273,6 +286,11 @@ function GalleryPage({ openHome }) {
       </header>
 
       <main className="galleryPage">
+        <div className="galleryHeader">
+          <p className="sectionLabel">Project Gallery</p>
+          <h1 className="galleryPageTitle">Labs, Projects, and Engineering Work</h1>
+        </div>
+
         <div className="photoOnlyGrid">
           {galleryImages.map((image, index) => (
             <img

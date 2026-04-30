@@ -563,23 +563,20 @@ footer {
 .galleryButton {
   padding: 18px 34px;
   border-radius: 18px;
-  border: 1px solid rgba(56, 189, 248, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.55);
   background: linear-gradient(135deg, #38bdf8, #0ea5e9);
   color: #03111f;
   font-size: 1.08rem;
   font-weight: 900;
   cursor: pointer;
-  box-shadow:
-    0 14px 35px rgba(56, 189, 248, 0.28),
-    0 0 0 8px rgba(56, 189, 248, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 22px rgba(56, 189, 248, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .galleryButton:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0 18px 45px rgba(56, 189, 248, 0.38),
-    0 0 0 10px rgba(56, 189, 248, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(56, 189, 248, 0.22);
+  background: linear-gradient(135deg, #7dd3fc, #0ea5e9);
 }
 
 .navButton {
@@ -602,4 +599,204 @@ footer {
   box-shadow:
     0 14px 35px rgba(56, 189, 248, 0.35),
     0 0 0 8px rgba(56, 189, 248, 0.1);
+}
+
+.builtBy {
+  margin-top: 10px;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.builtBy a {
+  color: #7dd3fc;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.builtBy a:hover {
+  text-decoration: underline;
+}
+
+.builtBy {
+  margin-top: 12px;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.builtBy p {
+  margin: 0 0 8px;
+}
+
+.footerArrow {
+  display: block;
+  color: #7dd3fc;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.footerCodeButton {
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: rgba(8, 24, 46, 0.95);
+  border: 1px solid rgba(125, 211, 252, 0.28);
+  color: #dbeafe;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s ease, background 0.2s ease, border 0.2s ease;
+}
+
+.footerCodeButton:hover {
+  transform: translateY(-2px);
+  background: rgba(12, 32, 58, 0.98);
+  border: 1px solid rgba(125, 211, 252, 0.42);
+}
+
+.copyright {
+  margin-top: 18px;
+  color: #94a3b8;
+}
+
+#experience {
+  text-align: center;
+}
+
+#experience h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.experienceCard {
+  text-align: center;
+}
+
+#about {
+  text-align: center;
+}
+
+#about h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1150px;
+}
+
+#about p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1100px;
+}
+
+#experience {
+  text-align: center;
+}
+
+#experience .sectionLabel,
+#experience h2 {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.experienceList {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experienceCard {
+  text-align: center;
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects .sectionLabel,
+#projects h2 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.projectGrid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectCard {
+  text-align: center;
+}
+
+#skills {
+  text-align: center;
+}
+
+#skills .sectionLabel,
+#skills h2 {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.skills {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact .sectionLabel,
+#contact h2,
+#contact p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact p {
+  max-width: 950px;
+}
+
+#contact .contactCard {
+  max-width: 750px;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+#contact .resumeButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+#about {
+  padding-top: 140px;
+}
+
+.galleryHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.galleryPageTitle {
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  margin: 12px auto 0;
+  max-width: 1000px;
 }
