@@ -1,6 +1,24 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [page, setPage] = useState("home");
+
+  const openGallery = () => {
+    setPage("gallery");
+    window.scrollTo(0, 0);
+  };
+
+  const openHome = () => {
+    setPage("home");
+    window.scrollTo(0, 0);
+  };
+
+  if (page === "gallery") {
+    return <GalleryPage openHome={openHome} />;
+  }
+
+
   return (
     <div className="page">
       <header className="navbar">
@@ -105,6 +123,12 @@ function App() {
             </p>
           </div>
         </div>
+
+        <div className="galleryButtonWrapper">
+        <button className="galleryButton" onClick={openGallery}>
+          View Project Gallery
+        </button>
+       </div>
       </section>
 
       <section id="projects" className="section">
@@ -180,7 +204,14 @@ function App() {
           <span>Technical Writing</span>
           <span>Data Analysis</span>
           <span>Energy Efficiency</span>
-          <span>Robotics Mentorship</span>
+          <span>Robotics</span>
+          <span>Autodesk</span>
+          <span>OSHA Certified</span>
+          <span>Arduino</span>
+          <span>Computer Numerical Control</span>
+          <span>Mentorship</span>
+          <span>Revit</span>
+          <span>PSPICE</span>
         </div>
       </section>
 
@@ -194,20 +225,65 @@ function App() {
 
         <div className="contactBox">
           <p><strong>Email:</strong> amanda.guerra1245@gmail.com</p>
-          <p><strong>LinkedIn:</strong> www.linkedin.com/in/amanda-guerra-1a2623326</p>
-          <p><strong>Location:</strong> Mission, Texas</p>
+          <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/amanda-guerra-1a2623326/</p>
+          <p><strong>Github:</strong> https://github.com/amandag123</p>
         </div>
-      </section>
 
         <div className="resumeButtonWrapper">
           <a className="button primary" href="/resume.pdf" target="_blank" rel="noreferrer">
             Open My Resume
           </a>
         </div>
+        </section>
 
       <footer>
         <p>© 2026 Amanda Guerra. Personal engineering portfolio.</p>
       </footer>
+    </div>
+  );
+}
+
+function GalleryPage({ openHome }) {
+ const galleryImages = [
+    "/images/gallery1.png",
+    "/images/gallery2.png",
+    "/images/gallery3.png",
+    "/images/gallery4.png",
+    "/images/gallery5.png",
+    "/images/gallery6.png",
+    "/images/gallery7.png",
+    "/images/gallery8.png",
+    "/images/gallery9.png",
+    "/images/gallery10.png",
+    "/images/gallery11.png",
+    "/images/gallery12.png",
+    "/images/gallery13.png",
+    "/images/gallery14.png",
+    "/images/gallery15.png",
+    "/images/gallery16.png",
+  ];
+
+  return (
+    <div className="page">
+      <header className="navbar">
+        <div className="logo" onClick={openHome}>Amanda Guerra</div>
+        <nav>
+          <button className="navButton" onClick={openHome}>Back to Home</button>
+        </nav>
+      </header>
+
+      <main className="galleryPage">
+        <div className="photoOnlyGrid">
+          {galleryImages.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Project and lab photo ${index + 1}`}
+              className="galleryOnlyImage"
+            />
+          ))}
+        </div>
+      </main>
     </div>
   );
 }
