@@ -274,6 +274,11 @@ function GalleryPage({ openHome }) {
     "/images/gallery14.png",
     "/images/gallery15.png",
     "/images/gallery16.png",
+    "/images/gallery17.png",
+    "/images/gallery18.png",
+    "/images/gallery19.png",
+    "/images/gallery20.png",
+    "/images/gallery21.png",
   ];
 
   return (
